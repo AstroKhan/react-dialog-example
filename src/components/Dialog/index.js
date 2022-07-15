@@ -5,6 +5,7 @@ import { normalizeDialog } from "./helpers";
 import data from "../../data";
 import reducer from "./reducer";
 import "./styles.css";
+import Title from "./Title";
 
 const Dialog = ({ newMessage }) => {
 
@@ -48,9 +49,13 @@ const Dialog = ({ newMessage }) => {
   return (
     <div className="dialog">
       <div className="overflow" ref={dialogRef}>
-        {normalizedDialog.map((item) => (
+        {normalizedDialog.map((item) => 
+        item.type === "message" ? (
           <Item {...item} key={item.id} onRemove={onRemove} />
-        ))}
+        ) : (
+            <Title key={item.id} date={item.date} />
+        )
+        )}
       </div>
     </div>
   );
