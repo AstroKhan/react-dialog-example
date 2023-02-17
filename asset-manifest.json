@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-dialog-example/static/css/main.3733812a.css",
+    "main.js": "/react-dialog-example/static/js/main.87b037b6.js",
+    "index.html": "/react-dialog-example/index.html",
+    "main.3733812a.css.map": "/react-dialog-example/static/css/main.3733812a.css.map",
+    "main.87b037b6.js.map": "/react-dialog-example/static/js/main.87b037b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3733812a.css",
+    "static/js/main.87b037b6.js"
+  ]
+}
